@@ -54,6 +54,12 @@ border-radius: 15px;
     justify-content: space-between;
     align-items: center;
 }
+.login div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #navbarTwo{
     display: flex;
 
@@ -63,11 +69,151 @@ border-radius: 15px;
     height: 70px;
 padding:0px 5%;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+position: sticky;
+margin-bottom: 20px;
 }
 #navbarTwo a{
 text-decoration: none;
 color: #3A98B9;
 font-weight: bold;
 }
+#navbarTwo a:hover{
+background-color:rgb(236, 200, 108);
+
+}
+/* footer starts here */
+#footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+#footer p{
+    color: rgb(103, 101, 101);
+    margin: 10px 0px;
+}
+#three a{
+    text-decoration: none;
+    color: rgb(103, 101, 101);
+    margin: 10px 0px;
+}
+#footer h4{
+    color: rgb(115, 113, 113) ;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+#three div{
+    margin: 10px 0px; 
+}
+.lastpara{
+    color: rgb(103, 101, 101) ;
+    width: 93%;
+    margin: auto;
+    margin-top: 50px;
+}
+/* scroolparaone stars here */
+#scrollparaOne{
+    display: flex;
+    /* color: rgb(115, 113, 113) ;
+    justify-content: space-around;
+    align-items: center; */
+    margin-bottom: 30px;
+}
+#scrollparaOne div{
+    display: flex;
+    flex-direction: column;
+    color: rgb(115, 113, 113) ;
+    justify-content: space-around;
+    align-items: center;
+}
+#scrollUpper{
+    display: flex;
+    
+    align-items: center;
+    width: 85%;
+    margin: 30px auto;
+   
+}
+#scrollUpper h2{
+    border-left: 1px solid rgb(174, 168, 168) ;
+    margin: 0px 20px 0px 20px;
+    padding: 0px 0px 0px 20px;
+}
+#offer{
+    display: flex;
+    background-color: #feb887; 
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+#offer div{
+    display: flex;
+    align-items: center;
+    
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#circleimg{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+#circleimg div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#circleimg img{
+    height: 150px;
+    width: 150px;
+}
+#circleimg p{
+    margin: 10px 0px;
+    font-weight: bold;
+    color: rgb(80, 79, 79);
+
+}
 
 
+#setwatch{
+    width: 90%;
+    margin: auto;
+    
+}
+#setwatch img{
+   
+    width: 100%;
+    margin: auto;
+}
+#setwatch h1{
+    color:#781b19 ;
+    
+}
+#setwatch div{
+    position: absolute;
+   left: 100px;
+   top: 1000px;
+   
+}
+#cycle{
+    display: flex;
+    width: 90%;
+    margin:30px auto;
+    justify-content: space-between;
+   color: green;
+   border: 1px solid red;
+}
+#cycle>div:nth-child(1){
+border: 1px solid black;
+font-size: 20px;
+padding: 20px;
+}
