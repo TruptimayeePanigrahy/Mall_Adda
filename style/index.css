@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@
     padding: 10px;
 }
 .logo img {
+
   width: 100px;
 }
 .searchInp{
@@ -23,7 +25,10 @@ width: 50%;
 justify-content: space-between;
 align-items: center;
 height: 50px;
+
  padding: 0px 0px 0px 15px;
+ padding: 0px 0px 0px 15px; 
+
 border-radius: 15px;
 }
 .searchInp input{
@@ -51,7 +56,9 @@ border-radius: 15px;
 }
 #navbarTwo{
     display: flex;
-    justify-content: space-around;
+
+    
+    justify-content: space-around; 
     align-items: center;
     height: 70px;
 padding:0px 5%;
@@ -62,7 +69,5 @@ text-decoration: none;
 color: #3A98B9;
 font-weight: bold;
 }
-
-
 
 
