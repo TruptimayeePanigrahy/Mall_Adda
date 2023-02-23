@@ -70,7 +70,9 @@ border-radius: 15px;
 padding:0px 5%;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 position: sticky;
+top: 70px;
 margin-bottom: 20px;
+background-color:white;
 }
 #navbarTwo a{
 text-decoration: none;
@@ -113,21 +115,7 @@ background-color:rgb(236, 200, 108);
     margin: auto;
     margin-top: 50px;
 }
-/* scroolparaone stars here */
-#scrollparaOne{
-    display: flex;
-    /* color: rgb(115, 113, 113) ;
-    justify-content: space-around;
-    align-items: center; */
-    margin-bottom: 30px;
-}
-#scrollparaOne div{
-    display: flex;
-    flex-direction: column;
-    color: rgb(115, 113, 113) ;
-    justify-content: space-around;
-    align-items: center;
-}
+
 #scrollUpper{
     display: flex;
     
@@ -200,9 +188,13 @@ background-color:rgb(236, 200, 108);
 }
 #setwatch div{
     position: absolute;
-   left: 100px;
-   top: 1000px;
+   left: 110px;
+   top: 1500px;
    
+}
+#setwatch h1{
+    margin: 0px 0px 25px 0px;
+    font-size: 40px;
 }
 #cycle{
     display: flex;
@@ -210,10 +202,93 @@ background-color:rgb(236, 200, 108);
     margin:30px auto;
     justify-content: space-between;
    color: green;
-   border: 1px solid red;
+  
 }
 #cycle>div:nth-child(1){
-border: 1px solid black;
+
 font-size: 20px;
 padding: 20px;
 }
+#cycle h2,p{
+    margin: 10px 0px;
+    
+}
+#cycle button{
+    cursor: pointer;
+      border: 1px solid green;
+      padding: 10px;
+     color: green;
+     font-size: 20px;
+  font-weight: bold;
+}
+#cycle button:hover{
+    background-color: green;
+    color: white;
+}
+.two{
+   display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width:100%;
+    margin: auto;
+}
+#carouseldiv{
+    width: 90%;
+    margin: 30px auto;
+    /* background-color: #ecf1f2; */
+}
+.subdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subdiv3{
+    display: flex;
+}
+.three1{
+    background-color: #feb887;
+    color: #781b19;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.three2{
+    display: flex;
+}
+.three2 img{
+    height: 350px;
+    width: 350px;
+}
+#carosoldiv2{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.three1 h1{
+    margin: 10px;
+    padding: 5px;
+}
+.threebtn{
+    width: 35%;
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+    background-color: #feb887;
+    border: 1px solid #781b19;
+    padding: 10px;
+    color: #781b19;
+  font-size: 20px;
+ font-weight: bold;
+}
+.threebtn:hover{
+    background-color: #781b19;
+    color: white;
+}
+.three1 p{
+    font-size: 25px;
+    padding: 20px;
+}
+
