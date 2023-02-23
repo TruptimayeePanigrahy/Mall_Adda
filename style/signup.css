@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 150px;
+  height: 75px;
+  cursor: pointer;
+}
+header span {
+  margin-right: 30px;
+}
+header span a {
+  color: blue;
+}
+#content h1 {
+  text-align: center;
+  margin: 30px;
+  font-size: 40px;
+}
+
+.radiooo {
+  text-align: center;
+}
+.radiooo input {
+  margin: 0 5px;
+}
+.m_body {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.left_side {
+  flex-direction: column;
+  width: 40%;
+  display: flex;
+}
+.left_side form input {
+  border-style: ridge;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 15px 0px 8px 0px;
+}
+.left_side form button {
+  border-radius: 12px;
+  padding: 10px 80px;
+}
+#form_text {
+  width: 90%;
+  margin: 20px 0px 20px 0px;
+}
+#form_text a {
+  color: rgb(21, 82, 204);
+}
+#x {
+  border-right: 1px solid black;
+  height: 300px;
+}
+
+.right_side {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.right_side a {
+  margin: 20px 0;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+  padding: 8px 20px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+#facebook {
+  background-color: rgb(66, 103, 178);
+  color: white;
+}
+.ico {
+  padding-right: 15px;
+  font-size: 25px;
+}
+.icoo {
+  color: rgb(209, 10, 10);
+  padding-right: 15px;
+  font-size: 25px;
+}
+.forma {
+  width: 30%;
+  display: none;
+  flex-direction: column;
+  margin: auto 450px;
+}
+
+.forma form input {
+  border-style: ridge;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 15px 8px;
+}
+.forma form button {
+  border-radius: 12px;
+  padding: 10px 80px;
+  margin-left: 40px;
+}
+#forma_text {
+  width: 90%;
+  margin: 20px auto;
+}
+#forma_text a {
+  color: rgb(21, 82, 204);
+}
+.container .forma select {
+  width: 100%;
+  border: 2px solid rgb(26, 3, 3);
+  border-style: ridge;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 15px 8px;
+  color: rgb(109, 109, 114);
+}
+.container .forma label,
+p {
+  color: rgb(109, 109, 114);
+}
+
+.footer {
+  border-top: 1px solid black;
+  width: 100%;
+  height: 80px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+.footer p,
+a {
+  color: rgb(65, 65, 63);
+  font-size: 12px;
+  display: inline-block;
+}

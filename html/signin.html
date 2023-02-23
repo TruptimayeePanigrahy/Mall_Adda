@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in Or Register |eBay</title>
+    <link rel="stylesheet" href="../style/signin.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="siteimage">
+        <a href="/index.html">
+          <img src="../images/logo2.png" alt="" height="100px" />
+        </a>
+      </div>
+      <div class="head">
+        <a href="tellus.html" target="_blank" method="get" autocomplete="off"
+          >Tell us what you think</a
+        >
+      </div>
+
+      <div class="signin">
+        <h2 class="title">Hello</h2>
+        <p class="title1">
+          Sign in to eBay Or<a href="./signup.html">create an account</a>
+        </p>
+        <br />
+
+        <div class="col">
+          <input
+            type="text"
+            id="user"
+            name="username"
+            placeholder="Enter username"
+          />
+
+          <input
+            type="submit"
+            value="Continue"
+            class="continue btn"
+            onclick="loginSubmit();"
+          />
+
+          <p class="social-text">Or</p>
+
+          <a href="https://www.facebook.com/login" class="fb btn"
+            ><i class="fa fa-facebook-official" aria-hidden="true"></i>
+            Continue With Facebook
+          </a>
+
+          <a href="https://accounts.google.com" class="google btn"
+            ><i class="fa fa-google" aria-hidden="true"></i>
+            Continue With Google
+          </a>
+
+          <a href="https://appleid.apple.com" class="apple btn"
+            ><i class="fa fa-apple" aria-hidden="true"></i>
+            Continue With Apple
+          </a>
+        </div>
+
+        <div class="bottom">
+          <input type="checkbox" id="checkbox" checked value="1" />Stay signed
+          in<br />
+
+          <p>
+            Using a public or shared device?<br />
+            Uncheck to protect your account.<br />
+            <a href="#">learn more</a>
+          </p>
+        </div>
+        <br />
+        <br />
+
+        <div class="footer">
+          <p> Copyright © 1995-2022 eBay Inc. All Rights Reserved.
+            <a href="#">Accessibility</a>,
+            <a href="#">User Agreement</a>,
+            <a href="#">Privacy</a>,
+            <a href="#">Cookies</a>,
+            <a href="#">Do not sell my personal information</a>
+            and
+            <a href="#">AdChoice</a>
+        </p>
+      </div>
+    </div>
+    <script src="../scripts/signin.js"></script>
+  </body>
+</html>
