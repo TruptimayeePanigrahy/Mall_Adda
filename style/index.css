@@ -1,4 +1,4 @@
-/* navbarone strts here */
+
 *{
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@
     padding: 10px;
 }
 .logo img {
-  
+
   width: 100px;
 }
 .searchInp{
@@ -25,7 +25,10 @@ width: 50%;
 justify-content: space-between;
 align-items: center;
 height: 50px;
+
+ padding: 0px 0px 0px 15px;
  padding: 0px 0px 0px 15px; 
+
 border-radius: 15px;
 }
 .searchInp input{
@@ -59,6 +62,8 @@ border-radius: 15px;
 }
 #navbarTwo{
     display: flex;
+
+    
     justify-content: space-around; 
     align-items: center;
     height: 70px;
@@ -165,6 +170,7 @@ background-color:rgb(236, 200, 108);
     color: rgb(80, 79, 79);
 
 }
+
 
 #setwatch{
     width: 90%;
