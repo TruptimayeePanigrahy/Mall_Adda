@@ -1,0 +1,207 @@
+body {
+    font-family: "Market Sans", Arial, sans-serif;
+    background-color: #fff;
+    /* display: flex; */
+    box-orient: vertical;
+    box-direction: normal;
+    align-items: center;
+    height: 100vh;
+    /* min-width: 300px; */
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  * {
+    border: #fff;
+    margin: auto;
+    padding: 10px;
+    width: fit-content1;
+  }
+  
+  .container {
+    
+    border: #fff;
+    position: relative;
+    /* border-radius: 15px; */
+    background-color: #fff;
+    padding: 20px 0 30px 0;
+    width: 100vw;
+    /* height: 80vh; */
+    box-shadow: 0 4px 28px 0 #fff;
+    justify-content: center;
+  }
+  
+  .signin {
+    position: absolute;
+  }
+  
+  .siteimage {
+    top: -47px;
+    left: 0;
+    width: 250px;
+    height: 200px;
+    font-size: 15px;
+    position: absolute;
+    float: left;
+    margin-top: -80px;
+    margin-left: top;
+    justify-content: left;
+  }
+  
+  .head {
+    position: relative;
+    font-size: 15px;
+    float: right;
+    margin-top: -60px;
+    margin: right, 80px;
+    justify-content: right;
+  }
+  
+  #user {
+    border-radius: 0%;
+  }
+  
+  .continue,
+  .fb {
+    background-color: #385998;
+    color: white;
+  }
+  
+  .google {
+    color: black;
+  }
+  
+  .apple {
+    color: black;
+  }
+  
+  .col {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+    display: grid;
+    gap: 10px;
+  }
+  
+  .signin {
+    width: 650px;
+    border: #fff;
+    position: relative;
+    font-size: 20px;
+    margin: auto;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+  
+  .title1 {
+    font-size: small;
+  }
+  
+  input,
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 48px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    font-family: inherit;
+    min-width: 128px;
+    text-align: center;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: transform 80msa ease-in;
+  }
+  
+  input:hover,
+  .btn:hover {
+    opacity: 3;
+  }
+  
+  .bottom {
+    font-size: 15px;
+  }
+  
+  #checkbox {
+    position: relative;
+    cursor: default;
+  }
+  
+  .footer {
+    font-size: small;
+  
+    border-top: 1px solid lightslategray;
+  }
+  
+  #img1 {
+    width: 90px;
+    height: 80px;
+    display: block;
+    background-size: 80px;
+  }
+  
+  .signInbtn {
+    line-height: 2;
+    color: white;
+    font-weight: 20px;
+    background-color: rgb(86, 115, 168);
+    font-size: bold;
+  }
+  
+  ul {
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+  }
+  
+  .menu {
+    position: relative;
+    font-size: small;
+  }
+  
+  .submenu {
+    position: absolute;
+  
+    justify-content: center;
+    width: 300px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  .submenu li {
+    padding: 10px;
+  }
+  .submenu li .submenu:hover {
+    color: #385998;
+  }
+  .submenu::before {
+    content: "";
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #470fe0;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 40px;
+    top: -35px;
+  }
+  
+  .menu:focus ~ .submenu {
+    display: block;
+    transition: all;
+  }
+  

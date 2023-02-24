@@ -1,0 +1,95 @@
+body{
+    background-color:#b7dfee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 70%;
+    font-size: 1.3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 900px;
+    min-height: 500px;
+    padding: 20px;
+}
+h2{
+   color: #001f49;
+}
+#payment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    flex-basis: 50%;
+
+}
+.right{
+    flex-basis: 50%;
+    margin: 0px 30px;
+}
+section{
+    padding: 10px;
+}
+section input[type="text"]{
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.7rem;
+    outline: none;
+}
+section input[type="email"]{
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.7rem;
+    outline: none;
+}
+section input[type="number"]{
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.7rem;
+    outline: none;
+}
+#zip {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5 rem;
+}
+#zip label{
+    display: flex;
+    flex-direction: column;
+}
+#zip select{
+     padding: 0.5rem 3rem;
+     width: 100%;
+     margin-top: 8px;
+}
+#z-input{
+    padding: 0.5rem 0.7rem; 
+    outline: none;
+}
+section img{
+    height: 50px;
+    width: 85px;
+    margin-top: 8px;
+}
+section button{
+    background-color: #feb887;
+    border: 1px solid #781b19;
+    padding: 10px;
+    color: #781b19;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+}
+section button:hover{
+    background-color:rgb(48, 190, 48);
+    color: white;
+}
+
