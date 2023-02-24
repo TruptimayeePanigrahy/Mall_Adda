@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register: Create a Personal Account</title>
     <link rel="stylesheet" href="../style/signup.css" />
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/electronics.css" />
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -15,6 +22,56 @@
     />
   </head>
   <body>
+    <div id="navbarOne">
+      <div class="logo"><img src="../images/logo2.png" alt="" /></div>
+      <div class="searchInp">
+        <input type="text" placeholder="Search For Anything" id="search" />
+        <div>
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="font-size: 25px; color: rgb(234, 221, 221)"
+          ></i>
+        </div>
+      </div>
+      <div class="login">
+        <div>
+          <i class="fa-solid fa-user" style="font-size: 30px; color: #3a98b9">
+          </i>
+          <h5 style="color: grey">Profile</h5>
+        </div>
+        <div>
+          <i
+            class="fa-sharp fa-solid fa-heart"
+            style="font-size: 30px; color: #3a98b9"
+          ></i>
+          <h5 style="color: grey">Wishlist</h5>
+        </div>
+        <div>
+          <i
+            class="fa-sharp fa-solid fa-cart-flatbed-suitcase"
+            style="font-size: 30px; color: #3a98b9"
+          ></i>
+          <h5 style="color: grey">Cart</h5>
+        </div>
+      </div>
+    </div>
+    <div id="navbarTwo">
+      <div id="navbartwo-first">
+        <a href="../html/index.html">HOME</a>
+        <!-- <a href="">SAVED</a> -->
+        <a href="../html/electronics.html">ELECTRONICS</a>
+        <!-- <a href="">MOTORS</a> -->
+        <a href="../html/fashion.html">FASHIONS</a>
+        <!-- <a href="">COLLCTIBLES AND ARTS</a> -->
+        <a href="">SPORTS</a>
+      </div>
+      <div id="navbartwo-second">
+        <a href="">HEALTH & BEAUTY</a>
+        <a href="">INDUSTRIAL EQUIPMENT</a>
+        <a href="">HOME AND GARDEN</a>
+        <a href="">DEALS</a>
+      </div>
+    </div>
     <div class="container">
       <div id="content">
         <h1>Create an account</h1>
@@ -37,7 +94,7 @@
       <br /><br /><br />
       <div class="m_body" id="main_body">
         <div class="left_side">
-          <form>
+          <form style="display: flex; flex-direction: column">
             <input
               id="F_Name"
               type="text"
@@ -98,7 +155,11 @@
           </a>
         </div>
       </div>
-      <div class="forma" id="form_j">
+      <div
+        class="forma"
+        id="form_j"
+        style="display: none; justify-content: center; justify-items: center"
+      >
         <form action="">
           <input
             type="text"
@@ -157,20 +218,87 @@
             and acknowledge reading our
             <a href="#">User Privacy Notice</a>
           </div>
-          <button onclick="BussinessRegisterSubmit(event)">
+          <button onclick="BussinessRegisterSubmit(event)" style="width: 90%">
             Create Account
           </button>
         </form>
       </div>
-      <div class="footer">
-        <p>
-          Copyright © 1995-2022 eBay Inc. All Rights Reserved.
-          <a href="#">Accessibility</a>, <a href="#">User Agreement</a>,
-          <a href="#">Privacy</a>, <a href="#">Cookies</a>,
-          <a href="#">Do not sell my personal information</a>
-          and
-          <a href="#">AdChoice</a>
-        </p>
+    </div>
+    <div class="" style="margin-top: 100px">
+      <hr />
+      <div id="footer">
+        <div class="one">
+          <h4>Buy</h4>
+          <p>Registration</p>
+          <p>eBay Money Back Guarantee</p>
+          <p>Bidding & buying help</p>
+          <p>Stores</p>
+        </div>
+        <div id="two">
+          <div>
+            <h4>Sell</h4>
+            <p>Start selling</p>
+            <p>Learn to sell</p>
+            <p>Affiliates</p>
+          </div>
+          <div>
+            <h4>Tools & apps</h4>
+            <p>Developers</p>
+            <p>Security center</p>
+            <p>Site map</p>
+          </div>
+        </div>
+        <div id="three">
+          <h4>Stay connected</h4>
+          <p>eBay's Blogs</p>
+          <div>
+            <i
+              class="fa-brands fa-facebook"
+              style="font-size: 20px; color: #3a98b9"
+            ></i>
+            <a href="https://www.facebook.com/ebay/">Facebook</a>
+          </div>
+          <div>
+            <i
+              class="fa-brands fa-square-twitter"
+              style="font-size: 20px; color: #3a98b9"
+            ></i>
+            <a href="https://twitter.com/eBay">Twitter</a>
+          </div>
+        </div>
+        <div id="four">
+          <h4>About eBay</h4>
+          <p>Company info</p>
+          <p>News</p>
+          <p>Investors</p>
+          <p>Careers</p>
+          <p>Government relations</p>
+          <p>Advertise with us</p>
+          <p>Policies</p>
+          <p>Verified Rights Owner (VeRO) Program</p>
+        </div>
+        <div id="five">
+          <div>
+            <h4>Help & Contact</h4>
+            <p>Seller Information Center</p>
+            <p>Contact us</p>
+          </div>
+          <div>
+            <h4>Community</h4>
+            <p>Announcements</p>
+            <p>Discussion boards</p>
+            <p>eBay Giving Works</p>
+          </div>
+        </div>
+      </div>
+      <div class="lastpara">
+        Copyright © 1995-2023 eBay Inc. All Rights Reserved. Accessibility, User
+        Agreement, Privacy, Payments Terms of Use, Cookies, Your Privacy Choices
+        and AdChoice
+        <i
+          class="fa-solid fa-circle-exclamation"
+          style="font-size: 20px; color: #3a98b9"
+        ></i>
       </div>
     </div>
     <script src="../scripts/signup.js"></script>

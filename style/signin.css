@@ -1,12 +1,12 @@
 body {
   font-family: "Market Sans", Arial, sans-serif;
   background-color: #fff;
-  display: flex;
+  /* display: flex; */
   box-orient: vertical;
   box-direction: normal;
   align-items: center;
   height: 100vh;
-  min-width: 300px;
+  /* min-width: 300px; */
   box-sizing: border-box;
   text-align: center;
   justify-content: center;
@@ -22,11 +22,11 @@ body {
 .container {
   border: #fff;
   position: relative;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   background-color: #fff;
   padding: 20px 0 30px 0;
-  width: 70vw;
-  height: 80vh;
+  width: 100vw;
+  /* height: 80vh; */
   box-shadow: 0 4px 28px 0 #fff;
   justify-content: center;
 }
@@ -77,10 +77,12 @@ body {
 
 .col {
   text-align: center;
-  width: 50%;
+  width: 70%;
   margin: auto;
   padding: 0 50px;
   margin-top: 6px;
+  display: grid;
+  gap: 10px;
 }
 
 .signin {
