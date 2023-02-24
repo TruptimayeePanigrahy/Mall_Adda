@@ -10,11 +10,13 @@ let price = document.getElementById("price")
 let rating = document.getElementById("rating")
 
 
-
+let arr = JSON.parse(localStorage.getItem("products")) || []
+// JSON.parse(localStorage.getItem("storeData"))
 
 window.addEventListener("load", () => {
     fetchingdata()
 })
+
 
 function fetchingdata() {
     fetch("../db.json")
@@ -39,22 +41,53 @@ function alldatashow(productData) {
         let card = document.createElement("div");
         // card.style.border = "2px solid red"
 
+     
+
         let image = document.createElement("img");
         image.setAttribute("src", element.image);
         // image.style.border = "2px solid green"
 
-        image.style.width = "240px"
+        image.style.width = "72%"
         image.style.height = "260px"
 
         let price = document.createElement("p");
         price.innerText = `₹${element.price}`;
         price.style.fontWeight = "600"
 
+        let heartdiv = document.createElement("div")
+        heartdiv.classList.add("heartdiv")
+
+        let heartbtn = document.createElement("button")
+        heartbtn.style.border = "0px"
+        heartbtn.style.outline = "0px"
+        // btn.style.cursor="pointer"
+        let i = document.createElement("i")
+        i.style.cursor = "pointer"
+        heartbtn.classList.add("btn1")
+        i.classList.add("fas")
+        i.classList.add("fa-heart")
+        heartbtn.append(i)
+        // heartbtn.style.border="2px solid green"
+        heartdiv.append(price, heartbtn)
+
+
+        heartbtn.addEventListener("click", () => {
+            if (heartbtn.style.color !== "red") {
+                heartbtn.style.color = "red"
+                console.log(element)
+            }
+            else if (heartbtn.style.color == "red") {
+                heartbtn.style.color = ""
+                console.log("nothing")
+            }
+        })
+
+
         let rating = document.createElement("p");
         rating.innerText = `${element.rating}⭐`;
-        
-        let divSurround= document.createElement("div")
-        // divSurround.style.border="2px solid red"
+
+        let divSurround = document.createElement("div")
+        // divSurround.style.border = "2px solid red"
         divSurround.classList.add("divsurround")
 
         let title = document.createElement("p");
@@ -64,18 +97,61 @@ function alldatashow(productData) {
         let button = document.createElement("button")
         button.classList.add("cart-btn")
         button.innerText = "Add To Cart"
-        button.addEventListener("click", () => {
-            alert("working")
-        })
-        divSurround.append(title,button)
 
-        card.append(image, price, rating, divSurround);
+        divSurround.append(title, button)
+
+        card.append(image, heartdiv, rating, divSurround);
+
+        button.addEventListener("click", () => {
+            // alert("working")
+            let flag = true
+            for (let i = 0; i <= arr.length - 1; i++) {
+
+                if (element.id == arr[i].id) {
+                    flag = false
+                    break;
+                }
+            }
+            if ((flag === true) || (arr.length === 0)) {
+                console.log(element)
+                element.quantity=1
+                arr.push(element)
+                alert("Product added to The cart")
+                // openPopup()
+                localStorage.setItem("products", JSON.stringify(arr))
+            } else {
+                alert("Product already in the cart")
+            }
+
+        })
+
         allProductSection.append(card);
 
 
     });
 
 }
+
+
+// *************
+// let popup = document.getElementById("popup")
+// // let btn = document.getElementById("btn")
+
+
+    
+//     function openPopup() {
+//         popup.classList.add("open-Popup")
+//         setTimeout(() => {
+//             closePopup()
+//         }, 900)
+
+//     }
+
+//     function closePopup() {
+//         popup.classList.remove("open-Popup")
+//     }
+
+// ************
 
 //FILTER BY BRAND
 
@@ -214,8 +290,8 @@ rating.addEventListener("change", () => {
         }).then((data) => {
             // console.log(data.Electronics)
             let productData = data.Electronics
-            
-            if(rating.value === "1-3"){
+
+            if (rating.value === "1-3") {
                 let filtered = productData.filter((element, index) => {
                     if (element.rating >= 1 && element.rating <= 3) {
                         return true
@@ -226,9 +302,9 @@ rating.addEventListener("change", () => {
                 })
                 alldatashow(filtered)
             }
-            else if(rating.value === "3-4"){
+            else if (rating.value === "3-4") {
                 let filtered = productData.filter((element, index) => {
-                    if (element.rating >3 && element.rating <= 4) {
+                    if (element.rating > 3 && element.rating <= 4) {
                         return true
                     } else {
                         return false
@@ -237,9 +313,9 @@ rating.addEventListener("change", () => {
                 })
                 alldatashow(filtered)
             }
-            else if(rating.value === "4-5"){
+            else if (rating.value === "4-5") {
                 let filtered = productData.filter((element, index) => {
-                    if (element.rating>4 && element.rating<=5) {
+                    if (element.rating > 4 && element.rating <= 5) {
                         return true
                     } else {
                         return false
@@ -248,7 +324,7 @@ rating.addEventListener("change", () => {
                 })
                 alldatashow(filtered)
             }
-            else{
+            else {
                 alldatashow(productData)
             }
         }).catch((error) => {

@@ -5,13 +5,13 @@
 
 
 
-
 #all-product-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 90%;
     margin: auto;
     gap: 1%;
+    margin-top: 20px;
     /* cursor: pointer; */
 }
 
@@ -56,7 +56,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
 }
 
 .cart-btn:hover{
@@ -97,7 +97,26 @@
 }
 
 
+/* //selct tags css below*/
 
+#filterAndSortDiv{
+    /* border: 2px solid black; */
+    display: block;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.select {
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    margin-right:4px;
+    cursor: pointer;
+}
 
 
 
@@ -114,11 +133,8 @@
     font-size: 25px;
     background: transparent;
     border: none;
-    
+    outline: none;
 
-      /* color: grey; */
-      /* background-color: aquamarine; */
-      /* outline: none; */
     
 }
 
@@ -130,7 +146,10 @@
 .heartdiv{
     display: flex;
     width: 95%;
+   
 
-    border: 4px solid rgb(237, 178, 18);
+    /* border: 4px solid rgb(237, 178, 18); */
     justify-content: space-between;
 }
+
+

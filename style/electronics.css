@@ -97,12 +97,16 @@
 
 }
 
+
 /* //selct tags css below*/
 
 #filterAndSortDiv{
     /* border: 2px solid black; */
-    display: inline-block;
-    margin-left: 75px;
+    display: block;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
     
 }
 
@@ -148,3 +152,4 @@
     /* border: 4px solid rgb(237, 178, 18); */
     justify-content: space-between;
 }
+
