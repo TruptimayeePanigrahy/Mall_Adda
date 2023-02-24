@@ -1,0 +1,22 @@
+#logodiv{
+    width: 100vw;
+    width: 20%;
+    margin: auto;
+}
+#logodiv img{
+    
+    width: 150px;
+}
+#nav{
+    background-color: #EEEEEE;
+    color:#3A98B9 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+#nav a{
+    text-decoration: none;
+    font-size: 30px;
+    color:#3A98B9 
+}

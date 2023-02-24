@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(140, 170, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #box {
+    height: 450px;
+    width: 400px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 130px;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    color: brown;
+    text-transform: uppercase;
+  }
+  input {
+    width: 90%;
+    padding: 10px;
+  }
+  #box p {
+    font-size: 30px;
+  }
+  #box button {
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color:brown;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #box button:hover{
+    background-color: rgb(47, 176, 47);
+    color: white;
+  }
