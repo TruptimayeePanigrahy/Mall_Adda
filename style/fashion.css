@@ -12,7 +12,10 @@
     margin: auto;
     gap: 1%;
     margin-top: 20px;
-    /* cursor: pointer; */
+     /* //changed below css to adjust footer */
+     margin-bottom: 260px;
+     /* border:2px solid black */
+    
 }
 
 #all-product-section>div {
