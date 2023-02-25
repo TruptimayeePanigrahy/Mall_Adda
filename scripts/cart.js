@@ -170,12 +170,28 @@ function alldatashow(productData) {
     outerdiv.append(card, buttonsdiv)
 
     productCart.append(outerdiv)
+    
 
   });
-
+  // localStorage.setItem("total",JSON.stringify(h1.innerText))
+  
 }
 
+
+
+
+
+// localStorage.setItem("total",json.stringify(h1.innerText))
+
 alldatashow(cartProducts)
+
+console.log(h1.innerText)
+
+let checkout= document.getElementById("checkout")
+checkout.addEventListener("click", ()=>{
+window.location.href="../html/checkout.html"
+
+})
 
 
 

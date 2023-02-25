@@ -15,9 +15,35 @@ let zipInp=document.getElementById("z-input").value
   let creditnumber = document.getElementById("cardnumber").value;
   console.log(nameInp, cvvInp, creditnumber);
   if (nameInp && cvvInp && creditnumber&&emailInp &&mobileinp&&selectInp&&adressinp&&zipInp&&yearinp&&monthinnp) {
-    alert("Order Successfully Placed");
-    window.location.href = "../html/index.html";
+    // alert("Order Successfully Placed");
+    // window.location.href = "../html/index.html";
+    let value = generateOTP();
+    alert("Your One Time Password is : " + value);
+
+    localStorage.setItem("OTP", JSON.stringify(value));
+
+    window.location.href = "../html/otp.html"
   } else {
     alert("Please fill the details");
   }
 }
+
+
+  
+       
+
+      
+    
+
+    // function for genarate otp
+    function generateOTP() {
+        var digits = '0123456789';
+        let OTP = "";
+        for (let i = 0; i < 4; i++) {
+            OTP = OTP + digits[Math.floor(Math.random() * 10)];
+        }
+        return OTP;
+    }
+   
+
+
