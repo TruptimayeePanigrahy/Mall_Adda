@@ -8,6 +8,7 @@ let category = document.getElementById("category")
 let price = document.getElementById("price")
 let rating = document.getElementById("rating")
 
+let productData
 window.addEventListener("load", () => {
     fetchingdata()
 })
@@ -21,7 +22,7 @@ function fetchingdata() {
             return getResponse
         }).then((data) => {
             console.log(data.Fashion)
-            let productData = data.Fashion
+         productData = data.Fashion
             alldatashow(productData)
         }).catch((error) => {
             console.log("error")
@@ -48,34 +49,34 @@ function alldatashow(productData) {
         price.style.fontWeight = "600"
 
         // ********************
-        let heartdiv=document.createElement("div")
+        let heartdiv = document.createElement("div")
         heartdiv.classList.add("heartdiv")
-    
+
 
         let heartbtn = document.createElement("button")
-        heartbtn.style.border="0px"
-        heartbtn.style.outline="0px"
+        heartbtn.style.border = "0px"
+        heartbtn.style.outline = "0px"
         // btn.style.cursor="pointer"
         let i = document.createElement("i")
-        i.style.cursor="pointer"
-       
+        i.style.cursor = "pointer"
+
         heartbtn.classList.add("btn1")
         i.classList.add("fas")
         i.classList.add("fa-heart")
         heartbtn.append(i)
         // heartbtn.style.border="2px solid green"
         // body.append(btn)
-        heartdiv.append(price,heartbtn)
-        heartbtn.addEventListener("click",()=>{
-        // alert("working")
-        // console.log(heartbtn.style.color)
-        if(heartbtn.style.color == "red"){
-            heartbtn.style.color = "grey"
-        }else{
-            heartbtn.style.color="red"
-        }
-    })
-    // **************
+        heartdiv.append(price, heartbtn)
+        heartbtn.addEventListener("click", () => {
+            // alert("working")
+            // console.log(heartbtn.style.color)
+            if (heartbtn.style.color == "red") {
+                heartbtn.style.color = "grey"
+            } else {
+                heartbtn.style.color = "red"
+            }
+        })
+        // **************
 
         let rating = document.createElement("p");
         rating.innerText = `${element.rating}⭐`;
@@ -91,7 +92,7 @@ function alldatashow(productData) {
         let button = document.createElement("button")
         button.classList.add("cart-btn")
         button.innerText = "Add To Cart"
-       
+
         divSurround.append(title, button)
 
         card.append(image, heartdiv, rating, divSurround);
@@ -108,7 +109,7 @@ function alldatashow(productData) {
             }
             if ((flag === true) || (arr.length === 0)) {
                 console.log(element)
-                element.quantity=1
+                element.quantity = 1
                 arr.push(element)
                 alert("Product added to The cart")
                 localStorage.setItem("products", JSON.stringify(arr))
@@ -265,8 +266,8 @@ rating.addEventListener("change", () => {
         }).then((data) => {
             // console.log(data.Electronics)
             let productData = data.Fashion
-            
-            if(rating.value === "1-3"){
+
+            if (rating.value === "1-3") {
                 let filtered = productData.filter((element, index) => {
                     if (element.rating >= 1 && element.rating <= 3) {
                         return true
@@ -277,9 +278,9 @@ rating.addEventListener("change", () => {
                 })
                 alldatashow(filtered)
             }
-            else if(rating.value === "3-4"){
+            else if (rating.value === "3-4") {
                 let filtered = productData.filter((element, index) => {
-                    if (element.rating >3 && element.rating <= 4) {
+                    if (element.rating > 3 && element.rating <= 4) {
                         return true
                     } else {
                         return false
@@ -288,9 +289,9 @@ rating.addEventListener("change", () => {
                 })
                 alldatashow(filtered)
             }
-            else if(rating.value === "4-5"){
+            else if (rating.value === "4-5") {
                 let filtered = productData.filter((element, index) => {
-                    if (element.rating>4 && element.rating<=5) {
+                    if (element.rating > 4 && element.rating <= 5) {
                         return true
                     } else {
                         return false
@@ -299,10 +300,26 @@ rating.addEventListener("change", () => {
                 })
                 alldatashow(filtered)
             }
-            else{
+            else {
                 alldatashow(productData)
             }
         }).catch((error) => {
             console.log("error")
         })
 })
+
+let searchbutton = document.getElementById("search-btn");
+
+searchbutton.addEventListener("click", () => {
+    let searchparam = document.getElementById("search").value;
+    let filtered = productData.filter((ele, i) => {
+        if (
+            ele.title.toUpperCase().includes(searchparam.toUpperCase()) === true
+        ) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    alldatashow(filtered);
+});

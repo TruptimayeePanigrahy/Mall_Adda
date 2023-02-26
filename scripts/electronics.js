@@ -9,6 +9,7 @@ let category = document.getElementById("category")
 let price = document.getElementById("price")
 let rating = document.getElementById("rating")
 
+let productData 
 
 let arr = JSON.parse(localStorage.getItem("products")) || []
 // JSON.parse(localStorage.getItem("storeData"))
@@ -25,7 +26,7 @@ function fetchingdata() {
             return getResponse
         }).then((data) => {
             // console.log(data.Electronics)
-            let productData = data.Electronics
+            productData = data.Electronics
             alldatashow(productData)
         }).catch((error) => {
             console.log("error")
@@ -42,7 +43,7 @@ function alldatashow(productData) {
         // card.style.border = "2px solid red"
         card.classList.add("divcard")
 
-     
+
 
         let image = document.createElement("img");
         image.setAttribute("src", element.image);
@@ -115,7 +116,7 @@ function alldatashow(productData) {
             }
             if ((flag === true) || (arr.length === 0)) {
                 console.log(element)
-                element.quantity=1
+                element.quantity = 1
                 arr.push(element)
                 alert("Product added to The cart")
                 // openPopup()
@@ -139,7 +140,7 @@ function alldatashow(productData) {
 // // let btn = document.getElementById("btn")
 
 
-    
+
 //     function openPopup() {
 //         popup.classList.add("open-Popup")
 //         setTimeout(() => {
@@ -334,3 +335,18 @@ rating.addEventListener("change", () => {
 })
 
 
+let searchbutton = document.getElementById("search-btn");
+
+searchbutton.addEventListener("click", () => {
+    let searchparam = document.getElementById("search").value;
+    let filtered = productData.filter((ele, i) => {
+        if (
+            ele.title.toUpperCase().includes(searchparam.toUpperCase()) === true
+        ) {
+            return true;
+        } else {
+            return false;
+        }
+    });
+    alldatashow(filtered);
+});
