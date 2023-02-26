@@ -17,7 +17,7 @@ function alldatashow(productData) {
     // console.log(element)
 
     let card = document.createElement("div");
-    //card.style.border = "2px solid red"
+    // card.style.border = "2px solid red"
     //card.style.width="30%"
     card.classList.add("card")
 
@@ -94,22 +94,32 @@ function alldatashow(productData) {
 
     plusbutton.addEventListener("click", () => {
       console.log(element)
-      if (span.innerText == 0) {
+      if (span.innerText > 0) {
         span.innerText++
         h1.innerText = +h1.innerText + element.quantity * (+element.price)
       }
-      else if (span.innerText > 0) {
-        span.innerText++
-        h1.innerText = +h1.innerText + element.quantity * (+element.price)
-      }
+      // else if (span.innerText > 0) {
+      //   span.innerText++
+      //   h1.innerText = +h1.innerText + element.quantity * (+element.price)
+      // }
 
     })
 
     minusbutton.addEventListener("click", () => {
-      if (span.innerText > 0) {
+      if (span.innerText > 1) {
         span.innerText--
         h1.innerText = +h1.innerText - element.quantity * (+element.price)
       }
+      //if you want to delte items on set of zer add below code 
+      // ******************
+      //  if(span.innerText <1)
+      //   cartProducts.splice(index, 1);
+      //   localStorage.setItem("products", JSON.stringify(cartProducts))
+      //   window.location.reload();
+      //   alldatashow(cartProducts)
+      // }
+      // *************
+
     })
 
     removebutton.addEventListener("click", (e) => {
@@ -160,12 +170,28 @@ function alldatashow(productData) {
     outerdiv.append(card, buttonsdiv)
 
     productCart.append(outerdiv)
+    
 
   });
-
+  // localStorage.setItem("total",JSON.stringify(h1.innerText))
+  
 }
 
+
+
+
+
+// localStorage.setItem("total",json.stringify(h1.innerText))
+
 alldatashow(cartProducts)
+
+console.log(h1.innerText)
+
+let checkout= document.getElementById("checkout")
+checkout.addEventListener("click", ()=>{
+window.location.href="../html/checkout.html"
+
+})
 
 
 

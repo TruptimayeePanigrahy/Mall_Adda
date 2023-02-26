@@ -13,6 +13,9 @@
     margin: auto;
     gap: 1%;
     margin-top: 20px;
+     /* //changed below css to adjust footer */
+    margin-bottom: 270px;
+    /* border:2px solid black */
     /* cursor: pointer; */
 }
 
@@ -40,6 +43,9 @@
 
 }
 
+/* .divcard{
+    display: block;
+} */
 .divsurround{
      display: flex;
      flex-direction: column;

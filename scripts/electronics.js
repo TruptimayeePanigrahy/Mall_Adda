@@ -40,6 +40,7 @@ function alldatashow(productData) {
     productData.forEach((element) => {
         let card = document.createElement("div");
         // card.style.border = "2px solid red"
+        card.classList.add("divcard")
 
      
 
