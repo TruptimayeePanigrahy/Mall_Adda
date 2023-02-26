@@ -20,3 +20,6 @@
     font-size: 30px;
     color:#3A98B9 
 }
+.row{
+    border: 3px solid red;
+}
