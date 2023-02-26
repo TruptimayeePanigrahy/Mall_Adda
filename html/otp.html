@@ -12,8 +12,13 @@
             font-size: 20px;
         }
 
+        body{
+            background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        }
+
         h1 {
             font-size: 50px;
+            padding-top: 100px;
         }
 
         input {
@@ -22,7 +27,9 @@
 
         form {
             margin: auto;
-            background-color: #F9FBE7;
+            border-radius: 15px;
+            /* background-color: #F9FBE7; */
+            background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
             width: 30%;
             height: 500px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -30,7 +37,8 @@
 
         #otp {
             background-color: #4CAF50;
-            color: white;
+            /* margin-top: 300px; */
+            color: black;
             padding: 12px;
             margin: auto;
             border: none;
@@ -41,11 +49,27 @@
             /* font-weight: bold; */
             text-align: center;
             outline: none;
+            font-weight: 600;
         }
 
-        input {
+         #first{
             border-radius: 7px;
+            z-index: 100;
+            /* background-color: green; */
+            color: black;
+         }
+         
+        /* input{
+            border-radius: 7px;
+            z-index: 100;
+            background-color: green;
+            color: black;
+        } */
+
+        form{
+            margin-top: 120px;
         }
+        
     </style>
 </head>
 
@@ -57,8 +81,8 @@
 
 
         <form>
-            <h1>OTP Verification</h1>
-            <input type="number" placeholder="Enter Your OTP here" id="first">
+            <h1 id="verify">OTP Verification</h1>
+            <input  type="number" placeholder="Enter Your OTP here" id="first">
             <br>
             <br>
             <br>
@@ -89,6 +113,10 @@
             
         if (checkOTP === Entered.value) {
             window.location.href = "Success.html";
+            localStorage.removeItem('products');//cart
+
+            localStorage.removeItem('total');//total value
+
         }
         else{
             window.location.href = "Failed.html";

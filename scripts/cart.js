@@ -97,6 +97,8 @@ function alldatashow(productData) {
       if (span.innerText > 0) {
         span.innerText++
         h1.innerText = +h1.innerText + element.quantity * (+element.price)
+        // console.log(h1.innerText)
+        total(h1.innerText)
       }
       // else if (span.innerText > 0) {
       //   span.innerText++
@@ -109,6 +111,8 @@ function alldatashow(productData) {
       if (span.innerText > 1) {
         span.innerText--
         h1.innerText = +h1.innerText - element.quantity * (+element.price)
+        // console.log(h1.innerText)
+        total(h1.innerText)
       }
       //if you want to delte items on set of zer add below code 
       // ******************
@@ -126,6 +130,8 @@ function alldatashow(productData) {
       h1.innerText = +h1.innerText - element.quantity * (+element.price)
       cartProducts.splice(index, 1);
       localStorage.setItem("products", JSON.stringify(cartProducts))
+      // console.log(h1.innerText)
+      total(h1.innerText)
       window.location.reload();
       alldatashow(cartProducts)
     })
@@ -141,6 +147,7 @@ function alldatashow(productData) {
       }
     })
 
+    //  console.log(h1.innerText)
     let outerdiv = document.createElement("div")
     outerdiv.classList.add("card1")
 
@@ -171,11 +178,12 @@ function alldatashow(productData) {
 
     productCart.append(outerdiv)
     
-
+      total(h1.innerText)
   });
   // localStorage.setItem("total",JSON.stringify(h1.innerText))
-  
+   
 }
+
 
 
 
@@ -189,11 +197,19 @@ console.log(h1.innerText)
 
 let checkout= document.getElementById("checkout")
 checkout.addEventListener("click", ()=>{
+  if(h1.innerText !== ""){
 window.location.href="../html/checkout.html"
+  }else{
+    alert("please add some products")
+  }
 
 })
 
 
 
+function total(total){
+  console.log(total)
+  localStorage.setItem("total",JSON.stringify(total))
+}
 
 
