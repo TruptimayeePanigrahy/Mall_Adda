@@ -1,115 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home page</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>home page</title>
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/fashion.css" />
 
-  <link rel="stylesheet" href="../style/index.css" />
-  <link rel="stylesheet" href="../style/fashion.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-</head>
+  <body>
+    <div id="navbarOne">
+      <div class="logo"><img src="../images/logo2.png" alt="" /></div>
 
-<body>
-  <div id="navbarOne">
-    <div class="logo"><img src="../images/logo2.png" alt="" /></div>
-
-    <div class="searchInp">
-      <input type="text" placeholder="Search For Anything" id="search" />
-      <div>
-        <i class="fa-solid fa-magnifying-glass" style="font-size: 25px; color: rgb(234, 221, 221)"></i>
+      <div class="searchInp">
+        <input type="text" placeholder="Search For Anything" id="search" />
+        <div>
+          <button
+            id="search-btn"
+            style="
+              background-color: #3a98b9;
+              border: none;
+              cursor: pointer;
+              outline: none;
+            "
+          >
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="font-size: 25px; color: white"
+            ></i>
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="login">
-      <div>
-        <i class="fa-solid fa-user" style="font-size: 30px; color: #3a98b9">
-        </i>
-        <h5 style="color: grey">Profile</h5>
-      </div>
+      <div class="login">
+        <div>
+          <i class="fa-solid fa-user" style="font-size: 30px; color: #3a98b9">
+          </i>
+          <h5 style="color: grey">Profile</h5>
+        </div>
 
-      <div>
-        <i class="fa-sharp fa-solid fa-heart" style="font-size:30px; color: #3a98b9"></i>
-        <h5 style="color: grey">Wishlist</h5>
-      </div>
-      <div>
-        <!-- <i class="fa-sharp fa-solid fa-cart-flatbed-suitcase" style="font-size: 30px; color: #3a98b9"></i>
+        <div>
+          <i
+            class="fa-sharp fa-solid fa-heart"
+            style="font-size: 30px; color: #3a98b9"
+          ></i>
+          <h5 style="color: grey">Wishlist</h5>
+        </div>
+        <div>
+          <!-- <i class="fa-sharp fa-solid fa-cart-flatbed-suitcase" style="font-size: 30px; color: #3a98b9"></i>
         <h5 style="color: grey">Cart</h5> -->
-        <a style="text-decoration: none;" href="../html/cart.html" ><i  class="fa-sharp fa-solid fa-cart-flatbed-suitcase" style="font-size: 30px; color: #3a98b9" ></i><h5 style="color: grey">Cart</h5></a> 
+          <a style="text-decoration: none" href="../html/cart.html"
+            ><i
+              class="fa-sharp fa-solid fa-cart-flatbed-suitcase"
+              style="font-size: 30px; color: #3a98b9"
+            ></i>
+            <h5 style="color: grey">Cart</h5></a
+          >
+        </div>
       </div>
     </div>
-  </div>
-  <div id="navbarTwo">
-    <div id="navbartwo-first">
-      <a href="../html/index.html">HOME</a>
-      <!-- <a href="">SAVED</a> -->
-      <a href="../html/electronics.html">ELECTRONICS</a>
-      <!-- <a href="">MOTORS</a> -->
-      <a href="../html/fashion.html">FASHIONS</a>
-      <!-- <a href="">COLLCTIBLES AND ARTS</a> -->
-      <a href="">SPORTS</a>
+    <div id="navbarTwo">
+      <div id="navbartwo-first">
+        <a href="../html/index.html">HOME</a>
+        <!-- <a href="">SAVED</a> -->
+        <a href="../html/electronics.html">ELECTRONICS</a>
+        <!-- <a href="">MOTORS</a> -->
+        <a href="../html/fashion.html">FASHIONS</a>
+        <!-- <a href="">COLLCTIBLES AND ARTS</a> -->
+        <a href="">SPORTS</a>
+      </div>
+      <div id="navbartwo-second">
+        <a href="">HEALTH & BEAUTY</a>
+        <a href="">INDUSTRIAL EQUIPMENT</a>
+        <a href="">HOME AND GARDEN</a>
+        <a href="">DEALS</a>
+      </div>
     </div>
-    <div id="navbartwo-second">
-      <a href="">HEALTH & BEAUTY</a>
-      <a href="">INDUSTRIAL EQUIPMENT</a>
-      <a href="">HOME AND GARDEN</a>
-      <a href="">DEALS</a>
+
+    <!-- *******NAV Bar ends here******* -->
+
+    <!-- **********filterAndSortDiv for product page below******* -->
+    <div id="filterAndSortDiv">
+      <div>
+        <select id="brand" class="select">
+          <option value="hide">--Filter By Brand --</option>
+          <option value="puma">puma</option>
+          <option value="nike">nike</option>
+          <option value="reebok">reebok</option>
+          <option value="adidas">adidas</option>
+        </select>
+
+        <select id="category" class="select">
+          <option value="hide">--Filter By Category --</option>
+          <option value="jacket">jacket</option>
+          <option value="t-shirt">t-shirt</option>
+          <option value="shoes">shoes</option>
+          <option value="wallet">wallet</option>
+          <option value="shirt">shirt</option>
+        </select>
+      </div>
+      <div>
+        <select id="price" class="select">
+          <option value="hide">--Sort By Price --</option>
+          <option value="2k to 10k">2k to 10k</option>
+          <option value="10k to 20k">10k to 20k</option>
+          <option value="20k to 30k">20k to 30k</option>
+          <option value="above 30k">above 30k</option>
+        </select>
+        <select id="rating" class="select">
+          <option value="hide">--Sort By Rating --</option>
+          <option value="1-3">1 to 3</option>
+          <option value="3-4">3 to 4</option>
+          <option value="4-5">above 4</option>
+        </select>
+      </div>
     </div>
-  </div>
 
-  <!-- *******NAV Bar ends here******* -->
-
-  <!-- **********filterAndSortDiv for product page below******* -->
-  <div id="filterAndSortDiv">
-    <div>
-      <select id="brand" class="select">
-        <option value="hide">--Filter By Brand --</option>
-        <option value="puma">puma</option>
-        <option value="nike">nike</option>
-        <option value="reebok">reebok</option>
-        <option value="adidas">adidas</option>
-       
-      </select>
-
-      <select id="category" class="select">
-        <option value="hide">--Filter By Category --</option>
-        <option value="jacket">jacket</option>
-        <option value="t-shirt">t-shirt</option>
-        <option value="shoes">shoes</option>
-        <option value="wallet">wallet</option>
-        <option value="shirt">shirt</option>
-      </select>
+    <div id="all-product-section">
+      <!-- // products append here -->
     </div>
-    <div>
-      <select id="price" class="select">
-        <option value="hide">--Sort By Price --</option>
-        <option value="2k to 10k">2k to 10k</option>
-        <option value="10k to 20k">10k to 20k</option>
-        <option value="20k to 30k">20k to 30k</option>
-        <option value="above 30k">above 30k</option>
-
-      </select>
-      <select id="rating" class="select">
-        <option value="hide">--Sort By Rating --</option>
-        <option value="1-3">1 to 3</option>
-        <option value="3-4">3 to 4</option>
-        <option value="4-5">above 4</option>
-
-      </select>
-    </div>
-  </div>
-
-  <div id="all-product-section">
-    <!-- // products append here -->
-  </div>
-
-</body>
-
+  </body>
 </html>
 
 <script src="../scripts/fashion.js"></script>
+<script src="../scripts/admin.js"></script>

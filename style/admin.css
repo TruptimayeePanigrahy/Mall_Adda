@@ -1,11 +1,20 @@
 #logodiv{
-    width: 100vw;
+    /* width: 100vw; */
     width: 20%;
     margin: auto;
 }
+body{
+    /* height: 100vh; */
+    display: grid;
+    /* background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); */
+}
+table{
+    width: 100%;
+}
 #logodiv img{
     
-    width: 150px;
+    width: 200px;
+    position: sticky;
 }
 #nav{
     background-color: #EEEEEE;
@@ -14,6 +23,8 @@
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    top: 30px;
 }
 #nav a{
     text-decoration: none;
@@ -22,4 +33,62 @@
 }
 .row{
     border: 3px solid red;
+}
+#nav div{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+#nav div select{
+    padding: 10px;
+    border: none;
+    color: #3A98B9;
+}
+th{
+    font-size: 30px;
+    color: rgb(194, 137, 22);
+}
+tr{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+th{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-between;
+
+} */ 
+button{
+    cursor: pointer;
+margin-top: 40px;
+border-radius: 10px;
+font-weight: 600;
+}
+button:hover{
+    background-color: green;
+    color: white;
+}
+#filterAndSortDiv{
+    /* border: 2px solid black; */
+    display: block;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+#filterAndSortDiv2{
+    /* border: 2px solid black; */
+    padding: 15px;
+    display: block;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
 }

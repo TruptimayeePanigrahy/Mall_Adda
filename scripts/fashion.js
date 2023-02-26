@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 })
 
 let arr = JSON.parse(localStorage.getItem("products")) || []
-
+let productData
 function fetchingdata() {
     fetch("../db.json")
         .then((response) => {
@@ -17,7 +17,7 @@ function fetchingdata() {
             return getResponse
         }).then((data) => {
             console.log(data.Fashion)
-            let productData = data.Fashion
+             productData = data.Fashion
             alldatashow(productData)
         }).catch((error) => {
             console.log("error")
@@ -301,3 +301,19 @@ rating.addEventListener("change", () => {
             console.log("error")
         })
 })
+
+let searchbutton = document.getElementById("search-btn");
+
+searchbutton.addEventListener("click", () => {
+  let searchparam = document.getElementById("search").value;
+  let filtered = productData.filter((ele, i) => {
+    if (
+      ele.title.toUpperCase().includes(searchparam.toUpperCase()) === true
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+  alldatashow(filtered);
+});
