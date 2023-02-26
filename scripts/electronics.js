@@ -3,7 +3,7 @@
 
 let allProductSection = document.getElementById("all-product-section")
 
-// for select tags below
+// // for select tags below
 let brand = document.getElementById("brand")
 let category = document.getElementById("category")
 let price = document.getElementById("price")
@@ -333,6 +333,7 @@ rating.addEventListener("change", () => {
         })
 })
 
+
 // search function
 let searchbutton = document.getElementById("search-btn");
 
@@ -349,3 +350,6 @@ searchbutton.addEventListener("click", () => {
   });
   alldatashow(filtered);
 });
+
+
+

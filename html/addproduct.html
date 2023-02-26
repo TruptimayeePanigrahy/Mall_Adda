@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../style/addproduct.css">
+  <link rel="stylesheet" href="../style/admin.css">
+</head>
+
+<body>
+  <div id="logodiv">
+    <img src="../images/logo2.png" alt="" />
+  </div>
+  <div id="nav">
+    <a href="">All products</a><a href="../html/addproduct.html">Add products</a
+    ><a href="../html/updateproduct.html">Update products</a><a href=""></a>
+  </div>
+
+  <form id="myform">
+    <select value="" id="selectCategory">
+      <option id="hide">Select Category</option>
+      <option id="electronics" value="electronics">electronics</option>
+      <option id="fashion" value="fashion">fashion</option>
+    </select>
+
+    <div id="inputbox">
+    
+    <input type="text" id="brand" placeholder="Add brand here">
+    <input type="text" id="category" placeholder="Add category here">
+    <input type="text" id="price" placeholder="Add price here">
+    <input type="text" id="rating" placeholder="Add rating here">
+    <input type="text" id="title" placeholder="Add title here">
+    <input type="text" id="imageURL" placeholder="Add imageUrl here">
+    <input type="text" id="id" placeholder="Enter id here">
+    <input style="width:50%; margin:auto;background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);" type="submit" id="submit" placeholder="SUBMIT">
+
+  </div>
+  </form>
+
+</body>
+
+</html>
+
+<script src="../scripts/addproduct.js"></script>

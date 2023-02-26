@@ -3,6 +3,10 @@
 
 let allProductSection = document.getElementById("all-product-section")
 
+let brand = document.getElementById("brand")
+let category = document.getElementById("category")
+let price = document.getElementById("price")
+let rating = document.getElementById("rating")
 
 window.addEventListener("load", () => {
     fetchingdata()
@@ -124,6 +128,7 @@ function alldatashow(productData) {
 //FILTER BY BRAND
 
 brand.addEventListener("change", () => {
+
     fetch("../db.json")
         .then((response) => {
             let getResponse = response.json()

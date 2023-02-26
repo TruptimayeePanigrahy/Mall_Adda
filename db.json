@@ -297,9 +297,9 @@
       "category": "earphones",
       "brand": "sony",
       "title": "Sony WF1000X/BM1 Bluetooth Wireless In-Ear Earphones Noise-Canceling (Black),Great Bass",
-     "price": "17548.00",
+      "price": "17548.00",
       "rating": "4.0",
- "image": "https://i.ebayimg.com/images/g/cRUAAOSwbVNbR-8N/s-l500.jpg",
+      "image": "https://i.ebayimg.com/images/g/cRUAAOSwbVNbR-8N/s-l500.jpg",
       "additionalImg": [
         "https://i.ebayimg.com/images/g/-BIAAOSwY29jyYep/s-l500.jpg",
         "https://i.ebayimg.com/images/g/-BIAAOSwY29jyYep/s-l500.jpg",
@@ -456,6 +456,69 @@
         "https://i.ebayimg.com/images/g/-BIAAOSwY29jyYep/s-l500.jpg",
         "https://i.ebayimg.com/images/g/-BIAAOSwY29jyYep/s-l500.jpg"
       ]
+    },
+    {
+      "brand": "nokia",
+      "category": "mobile",
+      "price": "4570",
+      "rating": "3.1",
+      "title": "nokia c3 RMXC45L",
+      "image": "https://i.ebayimg.com/images/g/~-EAAOSwhf9jNCt7/s-l640.jpg",
+      "id": "31"
+    },
+    {
+      "brand": "samsung",
+      "category": "mobile",
+      "price": "18995",
+      "rating": "4.7",
+      "title": "samsung note 9 pro max",
+      "image": "https://i.ebayimg.com/thumbs/images/g/KKwAAOSw9b9jfiK~/s-l225.webp",
+      "id": "32"
+    },
+    {
+      "brand": "samsung",
+      "category": "mobile",
+      "price": "23453",
+      "rating": "3.2",
+      "title": "samsung Fly note ultra pro,90 megapixel",
+      "image": "https://i.ebayimg.com/thumbs/images/g/DxsAAOSw43RjWiZI/s-l225.webp",
+      "id": "33"
+    },
+    {
+      "brand": "apple",
+      "category": "mobile",
+      "price": "65985",
+      "rating": "5",
+      "title": "apple iphone-XR 2024 ,black pearl",
+      "image": "https://i.ebayimg.com/images/g/Kj8AAOSwoAliuuyY/s-l640.jpg",
+      "id": "34"
+    },
+    {
+      "brand": "samsung",
+      "category": "mobile",
+      "price": "34678",
+      "rating": "3.1",
+      "title": "samsung note 20 ,gorilla glass 12,water resistance",
+      "image": "https://i.ebayimg.com/images/g/Z70AAOSwNBleoBe8/s-l640.jpg",
+      "id": "35"
+    },
+    {
+      "brand": "apple",
+      "category": "watch",
+      "price": "43526",
+      "rating": "2.4",
+      "title": "Apple Watch SE 40mm Silver Aluminum Case White ",
+      "image": "https://i.ebayimg.com/thumbs/images/g/aZ4AAOSwgYBgiz89/s-l225.webp",
+      "id": "36"
+    },
+    {
+      "brand": "apple",
+      "category": "mobile",
+      "price": "10000",
+      "rating": "4.3",
+      "title": "apple Asha 300 Unlocked 5MP Tocuh & Type 3G Hebrew English Arabic Russian Phone",
+      "image": "https://i.ebayimg.com/images/g/HvEAAOSwSPhiG4MI/s-l500.jpg",
+      "id": "39"
     }
   ],
   "Fashion": [
@@ -908,6 +971,60 @@
         "https://www.ilovedooney.com/on/demandware.static/-/Sites-master-catalog-dooney/default/dwa3eab0ad/images/large/Ostrich/B2342G_OT9PPATN.jpg",
         "https://www.ilovedooney.com/on/demandware.static/-/Sites-master-catalog-dooney/default/dwa3eab0ad/images/large/Ostrich/B2342G_OT9PPATN.jpg"
       ]
+    },
+    {
+      "brand": "nike",
+      "category": "jacket",
+      "price": "76541",
+      "rating": "3.5",
+      "title": "NEW Men's Under Armour 2019 Scratch 1/4 Zip Golf Pullover - Choose Size & Color!",
+      "image": "https://d3d71ba2asa5oz.cloudfront.net/52001040/images/ua%20scratch%20block%20royal.jpg",
+      "id": "31"
+    },
+    {
+      "brand": "adidas",
+      "category": "t-shirt",
+      "price": "6372",
+      "rating": "3.5",
+      "title": "adidas high quality fabric",
+      "image": "https://i.ebayimg.com/images/g/jigAAOSwxqZjJ4ow/s-l500.jpg",
+      "id": "32"
+    },
+    {
+      "brand": "adidas",
+      "category": "t-shirt",
+      "price": "8243",
+      "rating": "3.3",
+      "title": "adidas NXM35 air conditioned t-shirt",
+      "image": "https://i.ebayimg.com/images/g/K40AAOSwrnVjJlWB/s-l500.jpg",
+      "id": "33"
+    },
+    {
+      "brand": "adidas",
+      "category": "t-shirt",
+      "price": "12876",
+      "rating": "3.8",
+      "title": "adidas blue t-shirt,100 percent cotton",
+      "image": "https://i.ebayimg.com/images/g/WfkAAOSwd0hinhy5/s-l500.jpg",
+      "id": "34"
+    },
+    {
+      "brand": "puma",
+      "category": "shirt",
+      "price": "13258",
+      "rating": "2.6",
+      "title": "35% Off HUK WAYPOINT HOODIE | Sun Protection | Pick Color/Size | Free Ship",
+      "image": "https://i.ebayimg.com/images/g/h3MAAOSwLtljgLWA/s-l500.jpg",
+      "id": "35"
+    },
+    {
+      "brand": "reebok",
+      "category": "t-shirt",
+      "price": "5234",
+      "rating": "5",
+      "title": "jsjjsjjsjsjks",
+      "image": "https://i.ebayimg.com/images/g/-hUAAOSwtUJgnCEE/s-l500.jpg",
+      "id": "40"
     }
   ],
   "admin": [

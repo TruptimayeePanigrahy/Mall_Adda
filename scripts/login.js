@@ -1,6 +1,6 @@
 function validation() {
     if (document.getElementById("user").value === "") {
-      alert("Oops, that's not amatch");
+      alert("Oops, that's not a match");
       return false;
     }
     if (document.getElementById("user").value.length <= 4) {
@@ -12,7 +12,7 @@ function validation() {
   
   function validation() {
     if (document.getElementById("pass").value === "") {
-      alert("Oops, that's not amatch");
+      alert("Oops, that's not a match");
       return false;
     } else {
       return true;
