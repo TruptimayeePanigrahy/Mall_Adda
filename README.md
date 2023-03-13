@@ -10,6 +10,8 @@ Tech stack :1.HTML
               2.Nagaratnap
               3.Shudhanshu shekhar123
               
+ Netlify link : https://admirable-mousse-b6a985.netlify.app
+              
 Name of website:MallAdda
 
 ![logo2](https://user-images.githubusercontent.com/115460439/224559696-ecca57ed-c014-48e4-bf2a-7f061848f06d.png)
