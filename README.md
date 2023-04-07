@@ -10,7 +10,7 @@ Tech stack :1.HTML
               2.Nagaratnap
               3.Shudhanshu shekhar123
               
- Netlify link : https://wonderful-sprite-3596ab.netlify.app
+ Netlify link : https://glistening-lolly-63c2e1.netlify.app/
               
 Name of website:MallAdda
 
